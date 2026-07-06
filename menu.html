@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shomoyer Alo || Daily Newspaper in Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="images/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+</head>
+
+<body>
+    <!-- ==========================================================================
+                                Header Section
+   ========================================================================== -->
+
+    <header class="site-header">
+        <div class="container main-header-container m_none">
+            <div class="row align-items-center">
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-12 logo-section">
+                    <div>
+                        <a href="index.html">
+                            <img src="https://www.shomoyeralo.com/images/logo.jpg" alt="সময়ের আলো"
+                                class="header-logo-img">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-5 col-12 date-section">
+                    <div class="d-flex align-items-start justify-content-center justify-content-sm-start">
+                        <img src="https://www.shomoyeralo.com/images/cal.jpg" title="ক্যালেন্ডার" alt="Calendar"
+                            width="17" height="19" class="calendar-icon">
+                        <span class="bangla-date-text">
+                            রবিবার, ৫ জুলাই ২০২৬, <br>২১ আষাঢ় ১৪৩৩
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-12 utility-section">
+                    <div class="epaper-wrapper">
+                        <a target="_blank" href="https://epaper.shomoyeralo.com" class="links"> ই-পেপার </a>
+                    </div>
+                    <div class="social-icon-wrapper">
+                        <span><a target="_blank" href="https://www.facebook.com/Shomoyeralo"><img
+                                    src="https://www.shomoyeralo.com/images/ico-fb.jpg" alt="Facebook"></a></span>
+                        <span><a target="_blank" href="https://twitter.com/shomoyer_alo"><img
+                                    src="https://www.shomoyeralo.com/images/ico-x.jpg" alt="X"></a></span>
+                        <span><a target="_blank" href="https://www.youtube.com/c/ShomoyerAlo"><img
+                                    src="https://www.shomoyeralo.com/images/ico-tube.jpg" alt="YouTube"></a></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+                                Navigation Bar 
+   ========================================================================== -->
+
+    <div id="darkMenu" class="navigation-bar-row">
+        <div class="container container-menu-holder">
+            <nav class="custom-navbar-wrapper" >
+                <div class="custom-navbar-container">
+                    <button class="custom-mobile-toggle" id="mobileMenuBtn">
+                        ☰
+                    </button>
+                    <ul class="custom-nav-list" id="customNavList">
+
+                        <li class="custom-nav-item home-link-item">
+                            <a href="index.html">
+                                <img src="https://www.shomoyeralo.com/images/home.png" alt="Home"
+                                    class="nav-icon-img home-icon-graphic">
+                            </a>
+                        </li>
+
+                        <li class="custom-nav-item"><a href="#">সর্বশেষ</a></li>
+                        <li class="custom-nav-item"><a href="menu.html">জাতীয়</a></li>
+                        <li class="custom-nav-item"><a href="#">রাজনীতি</a></li>
+                        <li class="custom-nav-item"><a href="#">আন্তর্জাতিক</a></li>
+
+                        <li class="custom-nav-item has-dropdown">
+                            <a href="https://www.shomoyeralo.com/menu/107">সারাদেশ <span
+                                    class="dropdown-caret"></span></a>
+                            <ul class="nav-dropdown-menu">
+                                <li><a href="#">ঢাকা</a></li>
+                                <li><a href="#">চট্টগ্রাম</a></li>
+                                <li><a href="#">রাজশাহী</a></li>
+                                <li><a href="#">খুলনা</a></li>
+                                <li><a href="#">সিলেট</a></li>
+                                <li><a href="#">বরিশাল</a></li>
+                                <li><a href="#">রংপুর</a></li>
+                                <li><a href="#">ময়মনসিংহ</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="custom-nav-item"><a href="#">আনন্দ সময়</a></li>
+
+                        <li class="custom-nav-item has-dropdown">
+                            <a href="#">খেলা <span class="dropdown-caret"></span></a>
+                            <ul class="nav-dropdown-menu">
+                                <li><a href="#">ফুটবল</a></li>
+                                <li><a href="#">ক্রিকেট</a></li>
+                                <li><a href="#">অন্যান্য</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="custom-nav-item has-dropdown">
+                            <a href="#">ফিচার <span class="dropdown-caret"></span></a>
+                            <ul class="nav-dropdown-menu">
+                                <li><a href="#">লাইফস্টাইল</a></li>
+                                <li><a href="#">ট্রাভেল</a></li>
+                                <li><a href="#">স্বাস্থ্য</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="custom-nav-item"><a href="https://www.shomoyeralo.com/video/">ভিডিও</a></li>
+
+                        <li class="custom-nav-item has-dropdown more-dropdown-trigger">
+                            <a href="#" onclick="return false;">
+                                <img src="https://www.shomoyeralo.com/images/menu_all.jpg" alt="More"
+                                    class="nav-icon-img inline-icon">
+                                <span>আরও</span> <span class="dropdown-caret"></span>
+                            </a>
+                            <ul class="nav-dropdown-menu">
+                                <li><a href="#">ইসলাম</a></li>
+                                <li><a href="#">অর্থনীতি</a></li>
+                                <li><a href="#">প্রবাস</a></li>
+                                <li><a href="#">শিক্ষা</a></li>
+                                <li><a href="#">চাকরি</a></li>
+                                <li><a href="#">সাহিত্য</a></li>
+                                <li><a href="#">আইন-আদালত</a></li>
+                                <li><a href="#">মতামত</a></li>
+                                <li><a href="#">প্রযুক্তি</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="custom-nav-item utility-search-item">
+                            <a href="#" onclick="sear(); return false;">
+                                <img src="https://www.shomoyeralo.com/images/sea.jpg" alt="Search"
+                                    class="nav-icon-img search-icon-graphic">
+                            </a>
+                        </li>
+
+                        <li class="custom-nav-item utility-mood-item">
+                            <button class="mood-toggle-action-btn" id="mood-button" title="Dark Mode">
+                                <img src="https://www.shomoyeralo.com/images/moon.png" alt="Mood Mode Selector">
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <!-- ==========================================================================
+   SECTION: জাতীয় 
+   ========================================================================== -->
+
+    <section class="national-news-section">
+        <div class="national-section-container">
+
+            <div class="national-main-header">
+                <a href="menu.html" class="national-header-link">
+                    জাতীয়
+                </a>
+            </div>
+
+            <div class="national-content-layout-engine">
+
+                <div class="national-core-stories-column">
+
+                    <div class="national-lead-story-container">
+                        <div class="national-lead-media-frame">
+                            <a href="#">
+                                <img src="https://www.shomoyeralo.com/2026/07/06/sa_120.1783310051.jpg"
+                                    alt="২০২৭ সালের এপ্রিলে কমলাপুর পর্যন্ত চালু হচ্ছে মেট্রোরেল"
+                                    class="national-fluid-image">
+                            </a>
+                        </div>
+                        <div class="national-lead-text-content">
+                            <h2 class="national-lead-title">
+                                <a href="news.html">২০২৭ সালের এপ্রিলে কমলাপুর পর্যন্ত চালু হচ্ছে মেট্রোরেল</a>
+                            </h2>
+                            <p class="national-lead-excerpt">
+                                ২০২৭ সালের এপ্রিলে মতিঝিল থেকে কমলাপুর পর্যন্ত মেট্রোরেলের বর্ধিতাংশ চালুর লক্ষ্য
+                                নির্ধারণ করেছে কর্তৃপক্ষ। ঢাকা ম্যাস র‌্যাপিড ট্রানজিট ডেভেলপমেন্ট প্রজেক্ট (লাইন-৬)-এর
+                                প্রকল্প পরিচালক ব্রিগেডিয়ার জেনারেল (অব.) মো. আবদুল...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="national-subtext-grid-row">
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_113.1783268158_th.jpg"
+                                        alt="বাংলাদেশকে ধন্যবাদ জানাল ইরান" class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">বাংলাদেশকে ধন্যবাদ জানাল ইরান</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_118.1783262914_th.jpg"
+                                        alt="১৬ জুলাই জুলাই শহীদ দিবস পালনের সিদ্ধান্ত" class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">১৬ জুলাই ‘জুলাই শহীদ দিবস’ পালনের সিদ্ধান্ত</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_76.1783262887_th.jpg"
+                                        alt="আরাকান আর্মি প্রধানের বাংলাদেশে চিকিৎসার কোনো তথ্য নেই"
+                                        class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">আরাকান আর্মি প্রধানের বাংলাদেশে চিকিৎসার কোনো তথ্য নেই :
+                                    পররাষ্ট্রমন্ত্রী</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_76.1783262248_th.jpg"
+                                        alt="দেশের ৫ জেলায় বন্যার সতর্কতা" class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">দেশের ৫ জেলায় বন্যার সতর্কতা</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_113.1783259175_th.jpg"
+                                        alt="শহীদ মিনারে আবুল কাসেম ফজলুল হকের প্রতি শ্রদ্ধা জানানো হবে"
+                                        class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">শহীদ মিনারে আবুল কাসেম ফজলুল হকের প্রতি শ্রদ্ধা জানানো হবে</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_118.1783258946_th.jpg"
+                                        alt="সচিবালয়ের সামনে ভাত বিক্রি করে আটক সোহানী শিফা"
+                                        class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">সচিবালয়ের সামনে ভাত বিক্রি করে আটক সোহানী শিফা</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_113.1783258092_th.jpg"
+                                        alt="ডিআইজি পদমর্যাদার ৬ কর্মকর্তাকে বদলি" class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">ডিআইজি পদমর্যাদার ৬ কর্মকর্তাকে বদলি</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_113.1783257592_th.jpg"
+                                        alt="প্রধানমন্ত্রী তারেক রহমান/ নিরাপত্তা কৌশল যেন সরকার প্রধানকে জনগণ থেকে দূরে না ঠেলে দেয়"
+                                        class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">প্রধানমন্ত্রী তারেক রহমান/ নিরাপত্তা কৌশল যেন সরকার প্রধানকে জনগণ থেকে দূরে
+                                    না ঠেলে দেয়</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_118.1783254811_th.jpg"
+                                        alt="সাগরে নিম্নচাপ, উপকূলের যেসব এলাকায় ঝড়ের শঙ্কা"
+                                        class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">সাগরে নিম্নচাপ, উপকূলের যেসব এলাকায় ঝড়ের শঙ্কা</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_118.1783252554_th.jpg"
+                                        alt="হাম উপসর্গে গত ২৪ ঘণ্টায় আরও ৭ জনের মৃত্যু" class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">হাম উপসর্গে গত ২৪ ঘণ্টায় আরও ৭ জনের মৃত্যু</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_113.1783252324_th.jpg"
+                                        alt="চাকরি হারাচ্ছেন হাইপ্রোফাইল ৩৩ পুলিশ কর্মকর্তা"
+                                        class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">চাকরি হারাচ্ছেন হাইপ্রোফাইল ৩৩ পুলিশ কর্মকর্তা</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_113.1783250787_th.jpg"
+                                        alt="আবুল কাসেম ফজলুল হকের মৃত্যুতে সংস্কৃতিমন্ত্রীর শোক"
+                                        class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">আবুল কাসেম ফজলুল হকের মৃত্যুতে সংস্কৃতিমন্ত্রীর শোক</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_118.1783248804_th.jpg"
+                                        alt="অধ্যাপক আবুল কাসেম ফজলুল হক আর নেই" class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">অধ্যাপক আবুল কাসেম ফজলুল হক আর নেই</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_113.1783248721_th.jpg"
+                                        alt="আবারও চালু সিলেট-ম্যানচেস্টার সরাসরি ফ্লাইট" class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">আবারও চালু সিলেট-ম্যানচেস্টার সরাসরি ফ্লাইট</a>
+                            </h3>
+                        </article>
+
+                        <article class="national-sub-story-card">
+                            <div class="national-card-media-frame">
+                                <a href="#">
+                                    <img src="https://www.shomoyeralo.com/2026/07/05/sa_113.1783247431_th.jpg"
+                                        alt="বিরোধীদলীয় নেতার সঙ্গে স্পেনের রাষ্ট্রদূতের সৌজন্য সাক্ষাৎ"
+                                        class="national-fluid-image">
+                                </a>
+                            </div>
+                            <h3 class="national-card-title">
+                                <a href="#">বিরোধীদলীয় নেতার সঙ্গে স্পেনের রাষ্ট্রদূতের সৌজন্য সাক্ষাৎ</a>
+                            </h3>
+                        </article>
+
+                    </div>
+                </div>
+
+                <aside class="national-sidebar-feed-column">
+
+                    <div class="sidebar-block-header color-blue">
+                        <h3>সর্বশেষ সংবাদ <img src="https://www.shomoyeralo.com/images/titleR.jpg" width="9"
+                                height="16"></h3>
+                    </div>
+
+                    <div class="sidebar-compact-feed-list">
+                        <div class="sidebar-compact-item-card">
+                            <div class="sidebar-card-thumbnail">
+                                <img src="https://www.shomoyeralo.com/2026/07/05/sa_113.1783268426_th.jpg"
+                                    alt="পুলিশের ৩ কর্মকর্তা">
+                            </div>
+                            <h4 class="sidebar-card-headline">
+                                <a href="#">বাধ্যতামূলক অবসরে পুলিশের ঊর্ধ্বতন ৩৩ কর্মকর্তা</a>
+                            </h4>
+                        </div>
+
+                        <div class="sidebar-compact-item-card">
+                            <div class="sidebar-card-thumbnail">
+                                <img src="https://www.shomoyeralo.com/2026/07/05/sa_113.1783268158_th.jpg"
+                                    alt="ইরান ধন্যবাদ">
+                            </div>
+                            <h4 class="sidebar-card-headline">
+                                <a href="#">বাংলাদেশকে ধন্যবাদ জানাল ইরান</a>
+                            </h4>
+                        </div>
+
+                        <div class="sidebar-compact-item-card">
+                            <div class="sidebar-card-thumbnail">
+                                <img src="https://www.shomoyeralo.com/2026/07/05/sa_119.1783267726_th.jpg"
+                                    alt="মাদকসেবী">
+                            </div>
+                            <h4 class="sidebar-card-headline">
+                                <a href="#">‘আমার এলাকায় মাদকসেবী ও চাঁদাবাজদের ঠাঁই হবে না’</a>
+                            </h4>
+                        </div>
+
+                        <div class="sidebar-compact-item-card">
+                            <div class="sidebar-card-thumbnail">
+                                <img src="https://www.shomoyeralo.com/2026/07/05/sa_76.1783267683_th.jpg" alt="ইউনূস">
+                            </div>
+                            <h4 class="sidebar-card-headline">
+                                <a href="#">ড. ইউনূসসহ চারজনের বিরুদ্ধে করা মামলার আবেদনের আদেশ ১২ জুলাই</a>
+                            </h4>
+                        </div>
+
+                        <div class="sidebar-compact-item-card">
+                            <div class="sidebar-card-thumbnail">
+                                <img src="https://www.shomoyeralo.com/2026/07/05/sa_113.1783267373_th.jpg"
+                                    alt="ট্রাম্প নোবেল">
+                            </div>
+                            <h4 class="sidebar-card-headline">
+                                <a href="#">৪ যুদ্ধ মিটমাট করেছি, তবুও নোবেল পেলাম না</a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-block-header color-blue post-margin-adjustment">
+                        <h3>সর্বাধিক পঠিত <img src="https://www.shomoyeralo.com/images/titleR.jpg" width="9"
+                                height="16"></h3>
+                    </div>
+
+                    <div class="sidebar-compact-feed-list">
+                        <div class="sidebar-compact-item-card">
+                            <div class="sidebar-card-thumbnail">
+                                <img src="https://www.shomoyeralo.com/2026/07/04/sa_112.1783119902_th.jpg"
+                                    alt="শিল্পী সমিতির নির্বাচন : সভাপতি শিবা শানু, সেক্রেটারি জয় চৌধুরী">
+                            </div>
+                            <h4 class="sidebar-card-headline">
+                                <a href="#">শিল্পী সমিতির নির্বাচন : সভাপতি শিবা শানু, সেক্রেটারি জয় চৌধুরী</a>
+                            </h4>
+                        </div>
+
+                        <div class="sidebar-compact-item-card">
+                            <div class="sidebar-card-thumbnail">
+                                <img src="https://www.shomoyeralo.com/2026/07/05/sa_120.1783217146_th.jpg"
+                                    alt="ব্রাজিল নরওয়ে ম্যাচে জিতবে কে, জানাল সুপার কম্পিউটার">
+                            </div>
+                            <h4 class="sidebar-card-headline">
+                                <a href="#">ব্রাজিল নরওয়ে ম্যাচে জিতবে কে, জানাল সুপার কম্পিউটার</a>
+                            </h4>
+                        </div>
+
+                        <div class="sidebar-compact-item-card">
+                            <div class="sidebar-card-thumbnail">
+                                <img src="https://www.shomoyeralo.com/2026/07/05/sa_120.1783217544_th.jpg"
+                                    alt="নরওয়ে ম্যাচের আগে ব্রাজিল শিবিরে সুখবর">
+                            </div>
+                            <h4 class="sidebar-card-headline">
+                                <a href="#">নরওয়ে ম্যাচের আগে ব্রাজিল শিবিরে সুখবর</a>
+                            </h4>
+                        </div>
+
+                        <div class="sidebar-compact-item-card">
+                            <div class="sidebar-card-thumbnail">
+                                <img src="https://www.shomoyeralo.com/2026/07/04/sa_112.1783166914_th.jpg"
+                                    alt="মা হচ্ছেন মৌসুমী হামিদ, জানালেন দ্বিতীয় বিয়ের খবরও">
+                            </div>
+                            <h4 class="sidebar-card-headline">
+                                <a href="#">মা হচ্ছেন মৌসুমী হামিদ, জানালেন দ্বিতীয় বিয়ের খবরও</a>
+                            </h4>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ==========================================================================
+   SECTION: Footer
+   ========================================================================== -->
+
+    <footer class="site-main-footer">
+        <div class="footer-container">
+
+            <div class="footer-brand-column">
+                <div class="footer-logo">
+                    <a href="https://www.shomoyeralo.com">
+                        <img src="https://www.shomoyeralo.com/images/logo.jpg" alt="Daily Shomoyer Alo"
+                            class="brand-img">
+                    </a>
+                </div>
+                <p class="copyright-text">© 2026 Daily Shomoyer Alo</p>
+            </div>
+
+            <div class="footer-info-column">
+                <p class="editorial-text">
+                    ভারপ্রাপ্ত সম্পাদক : <b>সৈয়দ শাহনেওয়াজ করিম</b>, আমিন মোহাম্মদ মিডিয়া কমিউনিকেশন লিমিটেড এর পক্ষে
+                    প্রকাশক মো. ফয়সাল রহমতউল্লাহ ফেরদৌস। নাসির ট্রেড সেন্টার, ৮৯, বীর উত্তম সি আর দত্ত সড়ক (সোনারগাঁও
+                    রোড), বাংলামোটর, ঢাকা।
+                </p>
+                <p class="contact-text">
+                    ফোন : ৪১০৬২৩৬৮-৭৪, ফ্যাক্স : ৪১০৬২৩৭৫
+                </p>
+            </div>
+
+            <div class="footer-social-column">
+                <h4 class="social-title">সময়ের আলোর খবর পেতে ফলো করুন:</h4>
+                <div class="social-icon-links">
+                    <a target="_blank" href="https://www.facebook.com/Shomoyeralo" class="social-icon-btn"
+                        aria-label="Facebook">
+                        <img src="https://www.shomoyeralo.com/images/ico-fb.jpg" alt="Facebook">
+                    </a>
+                    <a target="_blank" href="https://twitter.com/shomoyer_alo" class="social-icon-btn"
+                        aria-label="Twitter X">
+                        <img src="https://www.shomoyeralo.com/images/ico-x.jpg" alt="Twitter X">
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/c/ShomoyerAlo" class="social-icon-btn"
+                        aria-label="YouTube">
+                        <img src="https://www.shomoyeralo.com/images/ico-tube.jpg" alt="YouTube">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/company/shomoyeralo/" class="social-icon-btn"
+                        aria-label="LinkedIn">
+                        <img src="https://www.shomoyeralo.com/images/ico-in.jpg" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
