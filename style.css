@@ -433,7 +433,7 @@ Responsive Navbar
 /* Left Sidebar Article Custom Layouts */
 .sidebar-story-title {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.35;
     margin-bottom: 6px;
 }
@@ -635,7 +635,7 @@ Responsive Navbar
     color: #1a1a1a !important;
     text-decoration: none !important;
     font-family: 'SolaimanLipi', Arial, sans-serif !important;
-    font-size: 16.5px !important;
+    font-size: 17px !important;
     font-weight: 400 !important;
     line-height: 1.45 !important;
     display: block;
