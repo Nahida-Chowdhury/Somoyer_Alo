@@ -102,3 +102,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+const scrollBtn = document.getElementById("scrollToTopBtn");
+
+// Click event to scroll to top
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+// Optional: Show button only after scrolling down
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollBtn.style.display = "flex";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+});

@@ -2349,3 +2349,41 @@ div.vid-box-card:hover {
         gap: 20px 0;
     }
 }
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: #333333;
+    /* Exact dark grey */
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    width: 50px;
+    /* Adjust width to match block shape */
+    border-radius: 2px;
+    transition: background-color 0.2s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #000000;
+}
+
+.scroll-to-top .icon {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.scroll-to-top .text {
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 2px;
+    letter-spacing: 0.5px;
+}
