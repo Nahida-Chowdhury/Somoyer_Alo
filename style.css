@@ -1,6 +1,8 @@
 /* ==========================================================================
    1. System Font Setup & Global Resets
    ========================================================================== */
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
 @font-face {
     font-family: 'SolaimanLipi';
     src: url('fonts/SolaimanLipi_20-04-07.ttf') format('truetype');
