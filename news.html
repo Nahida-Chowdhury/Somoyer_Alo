@@ -16,12 +16,31 @@
    ========================================================================== -->
 
     <header class="site-header">
+        <div class="mobile-header-wrapper d-lg-none p-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <button class="custom-mobile-toggle" id="mobileMenuBtn">☰</button>
+
+                <a href="index.html" class="flex-grow-1 text-center">
+                    <img src="https://www.shomoyeralo.com/images/logo.jpg" alt="Logo"
+                        style="max-height: 70px; width: auto; display: inline-block;">
+                </a>
+
+                <a href="#" onclick="sear(); return false;">
+                    <img src="https://www.shomoyeralo.com/images/sea.jpg" alt="Search"
+                        style="width: 24px; height: 24px;">
+                </a>
+            </div>
+            <div class="text-center mt-2" style="font-size: 16px; color: #333;">
+                বৃহস্পতিবার, ৯ জুলাই ২০২৬
+            </div>
+        </div>
+
         <div class="container main-header-container m_none">
             <div class="row align-items-center">
 
                 <div class="col-lg-4 col-md-4 col-sm-4 col-12 logo-section">
                     <div>
-                        <a href="index.html" class="header-logo-link">
+                        <a href="index.html">
                             <img src="https://www.shomoyeralo.com/images/logo.jpg" alt="সময়ের আলো"
                                 class="header-logo-img">
                         </a>
@@ -55,6 +74,7 @@
             </div>
             <div class="clear"></div>
         </div>
+
     </header>
 
     <!-- ==========================================================================
@@ -63,11 +83,10 @@
 
     <div id="darkMenu" class="navigation-bar-row">
         <div class="container container-menu-holder">
+
             <nav class="custom-navbar-wrapper">
                 <div class="custom-navbar-container">
-                    <button class="custom-mobile-toggle" id="mobileMenuBtn">
-                        ☰
-                    </button>
+
 
                     <ul class="custom-nav-list" id="customNavList">
 
@@ -84,8 +103,11 @@
                         <li class="custom-nav-item"><a href="#">আন্তর্জাতিক</a></li>
 
                         <li class="custom-nav-item has-dropdown">
-                            <a href="https://www.shomoyeralo.com/menu/107">সারাদেশ <span
-                                    class="dropdown-caret"></span></a>
+                            <a href="https://www.shomoyeralo.com/menu/107">
+                                সারাদেশ
+                                <span class="dropdown-caret"></span>
+                            </a>
+
                             <ul class="nav-dropdown-menu">
                                 <li><a href="#">ঢাকা</a></li>
                                 <li><a href="#">চট্টগ্রাম</a></li>
@@ -98,10 +120,16 @@
                             </ul>
                         </li>
 
-                        <li class="custom-nav-item"><a href="#">আনন্দ সময়</a></li>
+                        <li class="custom-nav-item">
+                            <a href="#">আনন্দ সময়</a>
+                        </li>
 
                         <li class="custom-nav-item has-dropdown">
-                            <a href="#">খেলা <span class="dropdown-caret"></span></a>
+                            <a href="#">
+                                খেলা
+                                <span class="dropdown-caret"></span>
+                            </a>
+
                             <ul class="nav-dropdown-menu">
                                 <li><a href="#">ফুটবল</a></li>
                                 <li><a href="#">ক্রিকেট</a></li>
@@ -110,7 +138,11 @@
                         </li>
 
                         <li class="custom-nav-item has-dropdown">
-                            <a href="#">ফিচার <span class="dropdown-caret"></span></a>
+                            <a href="#">
+                                ফিচার
+                                <span class="dropdown-caret"></span>
+                            </a>
+
                             <ul class="nav-dropdown-menu">
                                 <li><a href="#">লাইফস্টাইল</a></li>
                                 <li><a href="#">ট্রাভেল</a></li>
@@ -118,14 +150,23 @@
                             </ul>
                         </li>
 
-                        <li class="custom-nav-item"><a href="https://www.shomoyeralo.com/video/">ভিডিও</a></li>
+                        <li class="custom-nav-item">
+                            <a href="https://www.shomoyeralo.com/video/">
+                                ভিডিও
+                            </a>
+                        </li>
 
                         <li class="custom-nav-item has-dropdown more-dropdown-trigger">
+
                             <a href="#" onclick="return false;">
                                 <img src="https://www.shomoyeralo.com/images/menu_all.jpg" alt="More"
                                     class="nav-icon-img inline-icon">
-                                <span>আরও</span> <span class="dropdown-caret"></span>
+
+                                <span>আরও</span>
+
+                                <span class="dropdown-caret"></span>
                             </a>
+
                             <ul class="nav-dropdown-menu">
                                 <li><a href="#">ইসলাম</a></li>
                                 <li><a href="#">অর্থনীতি</a></li>
@@ -137,6 +178,7 @@
                                 <li><a href="#">মতামত</a></li>
                                 <li><a href="#">প্রযুক্তি</a></li>
                             </ul>
+
                         </li>
 
                         <li class="custom-nav-item utility-search-item">
@@ -148,13 +190,45 @@
 
                         <li class="custom-nav-item utility-mood-item">
                             <button class="mood-toggle-action-btn" id="mood-button" title="Dark Mode">
-                                <img src="https://www.shomoyeralo.com/images/moon.png" alt="Mood Mode Selector">
+
+                                <img src="https://www.shomoyeralo.com/images/moon.png" alt="Dark Mode">
+
                             </button>
                         </li>
 
                     </ul>
+
                 </div>
             </nav>
+
+        </div>
+    </div>
+    <!-- Add this near the top of your <body> -->
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+        <div class="menu-content">
+            <!-- Close Button -->
+            <span class="close-btn" id="closeMenuBtn">✕</span>
+
+            <ul class="mobile-menu-list">
+                <li><a href="#" style="color:red;">ইপেপার</a></li>
+                <li><a href="#">সর্বশেষ</a></li>
+                <li><a href="#">জাতীয়</a></li>
+                <li><a href="#">রাজনীতি</a></li>
+                <li><a href="#">আন্তর্জাতিক</a></li>
+                <li><a href="#">সারাদেশ</a></li>
+                <li><a href="#">আনন্দ সময়</a></li>
+                <li><a href="#">খেলা</a></li>
+                <li><a href="#">ফিচার</a></li>
+                <li><a href="#">ইসলাম</a></li>
+                <li><a href="#">অর্থনীতি</a></li>
+                <li><a href="#">প্রবাস</a></li>
+                <li><a href="#">শিক্ষা</a></li>
+                <li><a href="#">চাকরি</a></li>
+                <li><a href="#">সাহিত্য</a></li>
+                <li><a href="#">আইন-আদালত</a></li>
+                <li><a href="#">মতামত</a></li>
+                <li><a href="#">প্রযুক্তি</a></li>
+            </ul>
         </div>
     </div>
 

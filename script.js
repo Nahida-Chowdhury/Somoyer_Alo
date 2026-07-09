@@ -3,15 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
     /* ======================================================
        Mobile Menu Toggle
     ====================================================== */
+    // Open Overlay
+    document.getElementById('mobileMenuBtn').addEventListener('click', function () {
+        document.getElementById('mobileMenuOverlay').style.display = 'block';
+    });
 
-    const menuBtn = document.getElementById("mobileMenuBtn");
-    const nav = document.getElementById("customNavList");
+    // Close Overlay
+    document.getElementById('closeMenuBtn').addEventListener('click', function () {
+        document.getElementById('mobileMenuOverlay').style.display = 'none';
+    });
 
-    if (menuBtn && nav) {
-        menuBtn.addEventListener("click", function () {
-            nav.classList.toggle("active");
-        });
-    }
 
     /* ======================================================
        Mobile Dropdown
@@ -106,17 +107,18 @@ const scrollBtn = document.getElementById("scrollToTopBtn");
 
 // Click event to scroll to top
 scrollBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 });
 
 // Optional: Show button only after scrolling down
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    scrollBtn.style.display = "flex";
-  } else {
-    scrollBtn.style.display = "none";
-  }
+    if (window.scrollY > 300) {
+        scrollBtn.style.display = "flex";
+    } else {
+        scrollBtn.style.display = "none";
+    }
 });
+

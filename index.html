@@ -16,6 +16,25 @@
    ========================================================================== -->
 
     <header class="site-header">
+        <div class="mobile-header-wrapper d-lg-none p-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <button class="custom-mobile-toggle" id="mobileMenuBtn">☰</button>
+
+                <a href="index.html" class="flex-grow-1 text-center">
+                    <img src="https://www.shomoyeralo.com/images/logo.jpg" alt="Logo"
+                        style="max-height: 70px; width: auto; display: inline-block;">
+                </a>
+
+                <a href="#" onclick="sear(); return false;">
+                    <img src="https://www.shomoyeralo.com/images/sea.jpg" alt="Search"
+                        style="width: 24px; height: 24px;">
+                </a>
+            </div>
+            <div class="text-center mt-2" style="font-size: 16px; color: #333;">
+                বৃহস্পতিবার, ৯ জুলাই ২০২৬
+            </div>
+        </div>
+
         <div class="container main-header-container m_none">
             <div class="row align-items-center">
 
@@ -55,6 +74,7 @@
             </div>
             <div class="clear"></div>
         </div>
+
     </header>
 
     <!-- ==========================================================================
@@ -66,9 +86,7 @@
 
             <nav class="custom-navbar-wrapper">
                 <div class="custom-navbar-container">
-                    <button class="custom-mobile-toggle" id="mobileMenuBtn">
-                        ☰
-                    </button>
+
 
                     <ul class="custom-nav-list" id="customNavList">
 
@@ -183,6 +201,34 @@
                 </div>
             </nav>
 
+        </div>
+    </div>
+    <!-- Add this near the top of your <body> -->
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+        <div class="menu-content">
+            <!-- Close Button -->
+            <span class="close-btn" id="closeMenuBtn">✕</span>
+
+            <ul class="mobile-menu-list">
+                <li><a href="#" style="color:red;">ইপেপার</a></li>
+                <li><a href="#">সর্বশেষ</a></li>
+                <li><a href="#">জাতীয়</a></li>
+                <li><a href="#">রাজনীতি</a></li>
+                <li><a href="#">আন্তর্জাতিক</a></li>
+                <li><a href="#">সারাদেশ</a></li>
+                <li><a href="#">আনন্দ সময়</a></li>
+                <li><a href="#">খেলা</a></li>
+                <li><a href="#">ফিচার</a></li>
+                <li><a href="#">ইসলাম</a></li>
+                <li><a href="#">অর্থনীতি</a></li>
+                <li><a href="#">প্রবাস</a></li>
+                <li><a href="#">শিক্ষা</a></li>
+                <li><a href="#">চাকরি</a></li>
+                <li><a href="#">সাহিত্য</a></li>
+                <li><a href="#">আইন-আদালত</a></li>
+                <li><a href="#">মতামত</a></li>
+                <li><a href="#">প্রযুক্তি</a></li>
+            </ul>
         </div>
     </div>
 
