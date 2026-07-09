@@ -1987,11 +1987,11 @@ div.vid-box-card:hover {
 }
 
 .share-box-item .icon-gm {
-    filter: invert(34%) sepia(74%) saturate(2972%) hue-rotate(345deg) brightness(90%) contrast(97%);
+    /*filter: invert(34%) sepia(74%) saturate(2972%) hue-rotate(345deg) brightness(90%) contrast(97%);*/
 }
 
 .share-box-item .icon-yh {
-    filter: invert(18%) sepia(81%) saturate(3731%) hue-rotate(278deg) brightness(88%) contrast(100%);
+   /* filter: invert(18%) sepia(81%) saturate(3731%) hue-rotate(278deg) brightness(88%) contrast(100%);*/
 }
 
 .font-adjuster-right-wing {
@@ -2004,7 +2004,8 @@ div.vid-box-card:hover {
     height: 28px;
     border-radius: 50%;
     border: none;
-    background-color: #727272;
+    /* Changed from #727272 to a lighter grey to match the reference */
+    background-color: #d1d1d1; 
     color: #ffffff;
     font-size: 11px;
     font-weight: bold;
@@ -2023,7 +2024,8 @@ div.vid-box-card:hover {
 .print-icon-btn img {
     width: 13px;
     height: 13px;
-    filter: invert(100%);
+    /* Removed filter: invert(100%) to allow the original dark icon to show */
+    filter: none; 
 }
 
 /* ==========================================================================
