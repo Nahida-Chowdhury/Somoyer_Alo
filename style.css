@@ -35,9 +35,15 @@ body {
 /* ==========================================================================
    2. Main Branding Container Styles
    ========================================================================== */
+/* 1. Ensure the header row aligns items vertically to the center */
+.site-header .row {
+    align-items: center !important;
+}
+
+/* 2. Adjust container padding to remove extra space */
 .main-header-container {
     background: #ffffff;
-    padding: 0 15px 0 0;
+    padding: 10px 15px; /* Reduced vertical padding */
     margin-right: auto;
     margin-left: auto;
     border-radius: 6px;
@@ -53,8 +59,9 @@ body {
     }
 }
 
+/* 3. Significantly reduce padding on the sections */
 .logo-section {
-    padding: 15px 25px 10px 25px;
+    padding: 0 25px; /* Removed top/bottom padding */
 }
 
 .header-logo-img {
@@ -69,7 +76,7 @@ body {
 
 .date-section {
     text-align: center;
-    padding: 30px 15px 5px 15px;
+    padding: 0 15px; /* Removed top/bottom padding */
 }
 
 .calendar-icon {
@@ -88,7 +95,7 @@ body {
 
 .utility-section {
     text-align: right;
-    padding: 30px 0 15px 0;
+    padding: 0; /* Removed top/bottom padding */
 }
 
 .epaper-wrapper {
@@ -1846,7 +1853,6 @@ div.vid-box-card:hover {
 
 /* Global Shared Container Settings */
 .container {
-    padding: 15px;
     border-radius: 6px;
     max-width: 100%;
     margin-right: auto;
