@@ -2065,13 +2065,9 @@ div.vid-box-card:hover {
     transition: background-color 0.15s ease;
 }
 
-.circle-btn-tool:hover {
-    background-color: #ff0000;
-}
-
 .print-icon-btn img {
-    width: 13px;
-    height: 13px;
+    width: 100%;
+    height: 100%;
     /* Removed filter: invert(100%) to allow the original dark icon to show */
     filter: none; 
 }
