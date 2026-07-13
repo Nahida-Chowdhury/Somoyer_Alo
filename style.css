@@ -43,7 +43,8 @@ body {
 /* 2. Adjust container padding to remove extra space */
 .main-header-container {
     background: #ffffff;
-    padding: 10px 15px; /* Reduced vertical padding */
+    padding: 10px 15px;
+    /* Reduced vertical padding */
     margin-right: auto;
     margin-left: auto;
     border-radius: 6px;
@@ -61,7 +62,8 @@ body {
 
 /* 3. Significantly reduce padding on the sections */
 .logo-section {
-    padding: 0 25px; /* Removed top/bottom padding */
+    padding: 0 25px;
+    /* Removed top/bottom padding */
 }
 
 .header-logo-img {
@@ -76,7 +78,8 @@ body {
 
 .date-section {
     text-align: center;
-    padding: 0 15px; /* Removed top/bottom padding */
+    padding: 0 15px;
+    /* Removed top/bottom padding */
 }
 
 .calendar-icon {
@@ -95,7 +98,8 @@ body {
 
 .utility-section {
     text-align: right;
-    padding: 0; /* Removed top/bottom padding */
+    padding: 0;
+    /* Removed top/bottom padding */
 }
 
 .epaper-wrapper {
@@ -123,8 +127,11 @@ body {
 }
 
 @media (max-width: 991px) {
+
     /* Hide desktop header */
-    .main-header-container { display: none !important; }
+    .main-header-container {
+        display: none !important;
+    }
 
     /* Force the flexbox behavior */
     .mobile-header-wrapper .d-flex {
@@ -408,7 +415,8 @@ Responsive Navbar
 
 /* 1. Define the Overlay Container */
 .mobile-menu-overlay {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: fixed;
     top: 15;
     left: 0;
@@ -423,7 +431,8 @@ Responsive Navbar
 /* 2. Create the Two-Column Grid */
 .mobile-menu-list {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* This splits the menu into 2 equal columns */
+    grid-template-columns: 1fr 1fr;
+    /* This splits the menu into 2 equal columns */
     gap: 8px;
     list-style: none;
     padding: 0;
@@ -2005,11 +2014,12 @@ div.vid-box-card:hover {
     justify-content: center;
     background-color: #ffffff;
     cursor: pointer;
-    transition: border-color 0.15s ease;
+    transition: transform .2s ease-in,
+        border-color .2s ease-in;
 }
 
 .share-box-item:hover {
-    border-color: #ff0000;
+    transform: translateY(-3px);
 }
 
 .share-box-item img {
@@ -2039,7 +2049,7 @@ div.vid-box-card:hover {
 }
 
 .share-box-item .icon-yh {
-   /* filter: invert(18%) sepia(81%) saturate(3731%) hue-rotate(278deg) brightness(88%) contrast(100%);*/
+    /* filter: invert(18%) sepia(81%) saturate(3731%) hue-rotate(278deg) brightness(88%) contrast(100%);*/
 }
 
 .font-adjuster-right-wing {
@@ -2053,7 +2063,7 @@ div.vid-box-card:hover {
     border-radius: 50%;
     border: none;
     /* Changed from #727272 to a lighter grey to match the reference */
-    background-color: #d1d1d1; 
+    background-color: #d1d1d1;
     color: #ffffff;
     font-size: 11px;
     font-weight: bold;
@@ -2069,7 +2079,7 @@ div.vid-box-card:hover {
     width: 100%;
     height: 100%;
     /* Removed filter: invert(100%) to allow the original dark icon to show */
-    filter: none; 
+    filter: none;
 }
 
 /* ==========================================================================
