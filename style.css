@@ -736,6 +736,7 @@ Responsive Navbar
     }
 }
 
+
 /* ==========================================================================
    5. Newspaper Layout Grid Styles - Part 2 
    ========================================================================== */
@@ -2397,8 +2398,8 @@ div.vid-box-card:hover {
 
 @media (min-width: 768px) {
     .container {
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 45px;
+        padding-left: 45px;
     }
 }
 
@@ -2611,8 +2612,8 @@ div.vid-box-card:hover {
     .national-section-container,
     .article-details-container,
     .unique-category-grid-container{
-        padding-left:15px !important;
-        padding-right:15px !important;
+        padding-left:25px !important;
+        padding-right:25px !important;
         box-sizing:border-box;
     }
 
